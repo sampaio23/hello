@@ -1,0 +1,13 @@
+Description: Add testing.sh script
+ The testing.sh script is provided with the package and prints "this is a test
+ from Luiz Sampaio" to the standard error.
+ In addition, the message also appears when installing the package.
+Author: Luiz Sampaio <sampaio.ime@gmail.com>
+Forwarded: no, Ubuntu only
+Last-Update: 2025-09-05
+---
+This patch header follows DEP-3: http://dep.debian.net/deps/dep3/
+--- /dev/null
++++ b/testing.sh
+@@ -0,0 +1 @@
++echo "this is a test from Luiz Sampaio" >&2
